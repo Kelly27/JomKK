@@ -1,0 +1,102 @@
+@font-face{
+    font-family: "EnlightenyourDestiny";
+    src: url("/fonts/EnlightenyourDestiny.ttf");
+}
+
+@font-face{
+    font-family: "Delicious";
+    src: url("/fonts/Delicious/Delicious-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Delicious";
+    src: url("/fonts/Delicious/Delicious-BoldItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Delicious";
+    src: url("/fonts/Delicious/Delicious-Heavy.otf");
+    font-weight: 900;
+}
+
+@font-face{
+    font-family: "Delicious";
+    src: url("/fonts/Delicious/Delicious-Italic.otf");
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Delicious";
+    src: url("/fonts/Delicious/Delicious-Roman.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    background-color: #782a48;
+    color: white;
+    height: 126px;
+    width: 100%;
+
+    .logo{
+        position: relative;
+        top: -15px;
+    }
+
+    .header-title{
+        font-family: EnlightenyourDestiny;
+        font-size: 68px;
+        margin-top: 38px;
+    }
+
+    input{
+        border-radius: 5px;
+        color: #4c4c4c;
+        margin-top: 68px;
+        height: 40px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .glyphicon-search{
+        color: #403838;
+        font-size: x-large;
+        position: absolute;
+        top: 77px;
+        left: 240px;
+    }
+}
+
+.navbar{
+    min-height: 36px;
+    border: none;
+    border-radius: 0;
+    background-color: #c86b59;
+}
+.nav{
+    font-family: Delicious;
+    font-weight: 900;
+
+}
+#nav_css{
+    font-size: x-large;
+    color: white;
+    background-color: transparent;
+    padding: 8px 20px;
+}
+
+#drop_css{
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    &:hover{
+        background-color: #4c4c4c;
+    }
+}
