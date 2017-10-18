@@ -16,4 +16,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 mix.browserSync('localhost:8000');
 
-mix.sass('resources/views/layout.scss', 'public/css');
+mix.sass('resources/views/layout.scss', 'public/css')
+    .sass('resources/view/home.scss', 'public/css');

@@ -4,8 +4,8 @@
             <div class="col-sm-2">
                 <img src="images/logo.png" class="img-responsive logo">
             </div>
-            <div class="col-sm-6 header-title">
-                Food and Travelling Weblog for KK
+            <div class="col-sm-6">
+                <p class="header-title">Food and Travelling Weblog for KK</p>
             </div>
             <div class="col-sm-3">
                 <form>
