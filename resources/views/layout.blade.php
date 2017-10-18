@@ -8,7 +8,8 @@
     {{-- styles --}}
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    @yield('style')
     {{-- scripts --}}
     <script src="{{asset('js/app.js')}}"></script>
 </head>

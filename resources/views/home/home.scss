@@ -1,0 +1,43 @@
+@import "../partial/carousel";
+@import "../../../public/font-awesome/scss/variables.scss";
+@import "../../../public/font-awesome/scss/mixins.scss";
+@import "../../../public/font-awesome/scss/path.scss";
+@import "../../../public/font-awesome/scss/core.scss";
+@import "../../../public/font-awesome/scss/icons.scss";
+.home{
+    font-family: Delicious;
+    h1{
+        font-weight: 900;
+        color: black;
+    }
+
+    .trending > .col-md-4 > #info{
+        background-color: #f2d46b;
+        padding: 0 10px;
+    }
+}
+
+#home_food{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.trending{
+    #trend_title{
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+        margin: 0px;
+    }
+    #trend_time{
+        color: white;
+        font-size: 20px;
+        font-variant: small-caps;
+        margin: 0;
+    }
+}
