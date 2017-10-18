@@ -2856,9 +2856,8 @@
   color: black;
 }
 
-.home .trending > .col-md-4 > #info {
-  background-color: #f2d46b;
-  padding: 0 10px;
+.home .trending > .col-md-4 {
+  display: inline-block;
 }
 
 #home_food {
@@ -2871,6 +2870,37 @@
   border-top-left-radius: 30px;
 }
 
+#left-button,
+#right-button {
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trending {
+  overflow: auto;
+  white-space: nowrap;
+  height: 350px;
+}
+
+.trending .internal {
+  width: 322px;
+  overflow: auto;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 10px;
+}
+
 .trending #trend_title {
   color: black;
   font-weight: 900;
@@ -2878,10 +2908,19 @@
   margin: 0px;
 }
 
+.trending #info {
+  background-color: #f2d46b;
+  padding: 0 10px;
+}
+
 .trending #trend_time {
   color: white;
   font-size: 20px;
   font-variant: small-caps;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
