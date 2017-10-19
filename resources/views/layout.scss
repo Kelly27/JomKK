@@ -30,19 +30,21 @@
 
 @font-face{
     font-family: "Delicious";
-    src: url("/fonts/Delicious/Delicious-Roman.otf");
-    font-weight: normal;
+    src: url("/fonts/Delicious/Delicious-SmallCaps.otf");
+    font-variant: small-caps;
     font-style: normal;
 }
 
 @font-face{
     font-family: "Delicious";
-    src: url("/fonts/Delicious/Delicious-SmallCaps.otf");
-    font-variant: small-caps;
+    src: url("/fonts/Delicious/Delicious-Roman.otf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
     background-color: white;
+    font-family: Delicious;
 }
 
 .header{

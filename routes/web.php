@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return redirect('/');
 });
+
+Route::get('/food', function () {
+    return view('blog.food_index');
+});

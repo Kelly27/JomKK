@@ -1,0 +1,17 @@
+.breadcrumb{
+    background-color: transparent;
+    a{
+        color: #782a48;
+    }
+    li{
+        font-weight: bold;
+        font-size: large;
+    }
+    .active{
+        color: #c86b59;
+    }
+}
+.breadcrumb > li + li:before {
+    content: ">";
+    color: black;
+}
