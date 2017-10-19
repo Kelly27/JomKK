@@ -26,3 +26,7 @@ Route::get('/home', function () {
 Route::get('/food', function () {
     return view('blog.food_index');
 });
+
+Route::get('/travel', function () {
+    return view('blog.travel_index');
+});
