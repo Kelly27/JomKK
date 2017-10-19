@@ -25,7 +25,7 @@
     border-top-left-radius: 30px;
 }
 
-#left-button, #right-button{
+#left-button-1, #right-button-1, #left-button-2, #right-button-2, #left-button-3, #right-button-3{
     font-size: xx-large;
     border: none;
     background-color: transparent;
@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.trending{
+.trending, .recommended, .promotion{
     overflow: auto;
     white-space: nowrap;
     height: 350px;
@@ -48,23 +48,35 @@
         display: inline-block;
         margin: 0 10px;
     }
-    #trend_title{
+    #time{
+        color: white;
+        font-size: 20px;
+        font-variant: small-caps;
+        margin: 0;
+    }
+    #title{
         color: black;
         font-weight: 900;
         font-size: x-large;
         margin: 0px;
     }
     #info{
-        background-color: #f2d46b;
         padding: 0 10px;
     }
-    #trend_time{
-        color: white;
-        font-size: 20px;
-        font-variant: small-caps;
-        margin: 0;
+}
+
+.trending, .promotion{
+    #info{
+        background-color: #f2d46b;
     }
 }
+
+.recommended{
+    #info{
+        background-color: #a7d4b9;
+    }
+}
+
 ::-webkit-scrollbar {
     display: none;
 }

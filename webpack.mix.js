@@ -18,5 +18,6 @@ mix.browserSync('localhost:8000');
 
 mix.sass('resources/views/layout.scss', 'public/css')
     .sass('resources/views/home/home.scss', 'public/css', {
-        includePaths: ['resources/views']
-});
+        includePaths: ['resources/views']})
+    .sass('resources/views/blog/blog.scss', 'public/css',{
+        includePaths: ['resources/views']});

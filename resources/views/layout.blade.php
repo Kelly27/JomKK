@@ -17,21 +17,7 @@
     @include('partial.header')
     @yield('content')
     @include('partial.footer')
-    <script data-require="jquery" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $('#right-button').click(function() {
-            event.preventDefault();
-            $('#content').animate({
-                scrollLeft: "+=200px"
-            }, "slow");
-        });
 
-        $('#left-button').click(function() {
-          event.preventDefault();
-          $('#content').animate({
-            scrollLeft: "-=200px"
-        }, "slow");
-      });
-  </script>
+    @yield('body_script')
 </body>
 </html>
