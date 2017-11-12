@@ -22,8 +22,8 @@
     <div class="container">
         <ul class="nav navbar-nav">
             <li class="active"><a href="{{URL::to('/')}}" id="nav_css">@lang('layout.home')</a></li>
-            <li><a href="{{URL::to('/food')}}" id="nav_css">FOOD</a></li>
-            <li><a href="{{URL::to('/travel')}}" id="nav_css">TRAVELLING</a></li>
+            <li><a href="{{URL::to($locale . '/food')}}" id="nav_css">FOOD</a></li>
+            <li><a href="{{URL::to($locale . '/travel')}}" id="nav_css">TRAVELLING</a></li>
             <li><a href="#" id="nav_css">DIRECTORY</a></li>
             <li class="dropdown" style="position: relative; float: right;">
                 @php

@@ -11,27 +11,25 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/{locale}/index', function ($locale) {
-    App::setLocale($locale);
-    return view('home.index', ['locale' => $locale]);
-})->name('index');
-
-// Route::get('index', function () {
-//     return view('home.index');
-// })->name('index');
-
 Route::get('/', function(){
     return redirect()->route('index', ['en']);
 });
 
-Route::get('/food/{locale}', function () {
-    return view('blog.food_index');
-});
+Route::prefix('{locale}')->group(function(){
 
-Route::get('/travel', function () {
-    return view('blog.travel_index');
+    //homepage route
+    Route::get('index', function($locale){
+        App::setLocale($locale);
+        return view('home.index', ['locale' => $locale]);
+    })->name('index');
+
+    Route::get('food', function($locale) {
+        App::setLocale($locale);
+        return view('blog.food_index', ['locale' => $locale]);
+    })->name('food');
+
+    Route::get('travel', function($locale) {
+        return view('blog.travel_index', ['locale' => $locale]);
+    })->name('travel');
+
 });
