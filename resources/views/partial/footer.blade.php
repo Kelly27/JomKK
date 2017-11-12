@@ -3,7 +3,7 @@
         <table style="max-height: 215px">
             <tr>
                 <td>
-                    <img src="images/logo.png" class="img-responsive logo">
+                    <img src="{{asset("images/logo.png")}}" class="img-responsive logo">
                 </td>
                 <td>
                     <a href="#">ABOUT US</a><br>

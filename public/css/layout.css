@@ -94,7 +94,8 @@ body {
 .nav {
   font-family: Delicious;
   font-weight: 900;
-  margin-left: 183px;
+  width: 100%;
+  padding-left: 173px;
 }
 
 #nav_css {

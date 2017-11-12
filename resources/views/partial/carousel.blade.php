@@ -8,11 +8,11 @@
     </ol>
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner">
-      <div class="item active" id="carousel_item_css" style="background-image:url('images/Carousel 1.png');">
+      <div class="item active" id="carousel_item_css" style="background-image:url('../images/Carousel 1.png');">
       </div>
-      <div class="item" id="carousel_item_css" style="background-image:url('images/Carousel 2.png');">
+      <div class="item" id="carousel_item_css" style="background-image:url('../images/Carousel 2.png');">
       </div>
-      <div class="item" id="carousel_item_css" style="background-image:url('images/Carousel 3.png');">
+      <div class="item" id="carousel_item_css" style="background-image:url('../images/Carousel 3.png');">
       </div>
     </div>
   </div>

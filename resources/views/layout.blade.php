@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- styles --}}
-    <link href="css/app.css" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
     <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}">
     @yield('style')
@@ -14,6 +14,7 @@
     <script src="{{asset('js/app.js')}}"></script>
 </head>
 <body>
+    <div id='app'></div>
     @include('partial.header')
     @yield('content')
     @include('partial.footer')

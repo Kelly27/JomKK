@@ -15,15 +15,20 @@
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('home.index');
+Route::get('/{locale}/index', function ($locale) {
+    App::setLocale($locale);
+    return view('home.index', ['locale' => $locale]);
+})->name('index');
+
+// Route::get('index', function () {
+//     return view('home.index');
+// })->name('index');
+
+Route::get('/', function(){
+    return redirect()->route('index', ['en']);
 });
 
-Route::get('/home', function () {
-    return redirect('/');
-});
-
-Route::get('/food', function () {
+Route::get('/food/{locale}', function () {
     return view('blog.food_index');
 });
 
