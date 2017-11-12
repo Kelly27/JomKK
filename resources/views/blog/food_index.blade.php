@@ -12,26 +12,18 @@
                                                 'active_bread' => 'Food'])
             <h1>FOOD</h1>
             <div class="row">
-                @for($i = 0; $i < 15; $i++)
-                <div class="col-sm-4">
-                    @if($i%2 == 0)
-                    <a href="#" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/food1.png')}});">
-                        <div id="overlay">
-                            <p class="text-center title">Amazing Breakfast at IMAGO</p>
-                            <p class="text-center time"><i class="fa fa-clock-o" aria-hidden="true"></i> 2nd Oct, 2017</p>
-                        </div>
-                    </div></a>
-                    @else
-                    <a href="#" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/food2.png')}});">
-                        <div id="overlay">
-                            <p class="text-center title">Enjoy the Sea View at Suria Food Court</p>
-                            <p class="text-center time"><i class="fa fa-clock-o" aria-hidden="true"></i> 2nd Oct, 2017</p>
-                        </div>
-                    </div></a>
-                    @endif
-                </div>
-                @endfor
+                @foreach($posts as $p)
+                    <div class="col-sm-4">
+                        <a href="{{URL::to($locale . '/food/' . $p->id)}}" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/' . $p->image)}});">
+                            <div id="overlay">
+                                <p class="text-center title">{{$p->title}}</p>
+                                <p class="text-center time"><i class="fa fa-clock-o" aria-hidden="true"></i> {{$p->created_at->toFormattedDateString()}}</p>
+                            </div>
+                        </div></a>
+                    </div>
+                @endforeach
             </div>
+            {{$posts->links('vendor.pagination.bootstrap-4')}}
         </div>
     </div>
 </div>

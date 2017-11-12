@@ -23,13 +23,10 @@ Route::prefix('{locale}')->group(function(){
         return view('home.index', ['locale' => $locale]);
     })->name('index');
 
-    Route::get('food', function($locale) {
-        App::setLocale($locale);
-        return view('blog.food_index', ['locale' => $locale]);
-    })->name('food');
+    Route::get('food', 'FoodPostController@index')->name('food');
+    Route::get('food/{id}', 'FoodPostController@article');
 
-    Route::get('travel', function($locale) {
-        return view('blog.travel_index', ['locale' => $locale]);
-    })->name('travel');
+    Route::get('travel', 'TravelPostController@index')->name('travel');
+    Route::get('travel/{id}', 'TravelPostController@article');
 
 });

@@ -1,3 +1,43 @@
+.article {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.article h1,
+.article h2 {
+  color: black;
+  font-weight: 900;
+}
+
+.article .time {
+  font-size: large;
+  font-variant: small-caps;
+  font-style: normal;
+}
+
+.article .article-image {
+  margin: 10px auto;
+}
+
+.article .article-content {
+  color: black;
+  font-size: initial;
+  font-weight: bold;
+}
+
+.article #more_link {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  background-color: #874C62;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  -webkit-box-shadow: 8px 9px 20px 0px #615959;
+          box-shadow: 8px 9px 20px 0px #615959;
+  margin-bottom: 10px;
+}
+
 .breadcrumb {
   background-color: transparent;
   padding: 0;
@@ -39,6 +79,7 @@
 .blog .item_card {
   width: 100%;
   height: 240px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 20px auto;
@@ -123,5 +164,28 @@
 
 .blog .filter form input[type="checkbox"]:checked + label:after {
   opacity: 1;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  border: none;
+  background-color: #874C62;
+  color: white;
+  margin: 3px;
+  border-radius: 5px;
+  font-family: Raleway;
+}
+
+.pagination > .active > span {
+  background-color: #C98474;
+}
+
+.pagination > .active > span:hover {
+  background-color: #c79a90;
+}
+
+.pagination > .disabled > span {
+  background-color: #874C62;
+  color: white;
 }
 
