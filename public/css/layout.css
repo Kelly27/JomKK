@@ -47,6 +47,31 @@ body {
   font-family: Delicious;
 }
 
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: medium;
+}
+
+.breadcrumb a {
+  color: #782a48;
+}
+
+.breadcrumb li {
+  font-weight: bold;
+  font-size: large;
+}
+
+.breadcrumb .active {
+  color: #c86b59;
+}
+
+.breadcrumb > li + li:before {
+  content: ">";
+  color: black;
+}
+
 .header {
   background-color: #782a48;
   color: white;

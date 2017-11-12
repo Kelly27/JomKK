@@ -1,26 +1,5 @@
 @import 'article/article';
 
-.breadcrumb{
-    background-color: transparent;
-    padding: 0;
-    margin-bottom: 0;
-    font-size: medium;
-    a{
-        color: #782a48;
-    }
-    li{
-        font-weight: bold;
-        font-size: large;
-    }
-    .active{
-        color: #c86b59;
-    }
-}
-.breadcrumb > li + li:before {
-    content: ">";
-    color: black;
-}
-
 .blog{
     h1{
         font-weight: 900;
@@ -126,6 +105,10 @@
             margin: 3px;
             border-radius: 5px;
             font-family: Raleway;
+            &:hover{
+                background-color: #c79a90;
+                color: white;
+            }
         }
     }
     & > .active > span{

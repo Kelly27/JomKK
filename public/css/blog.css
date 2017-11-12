@@ -38,31 +38,6 @@
   margin-bottom: 10px;
 }
 
-.breadcrumb {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 0;
-  font-size: medium;
-}
-
-.breadcrumb a {
-  color: #782a48;
-}
-
-.breadcrumb li {
-  font-weight: bold;
-  font-size: large;
-}
-
-.breadcrumb .active {
-  color: #c86b59;
-}
-
-.breadcrumb > li + li:before {
-  content: ">";
-  color: black;
-}
-
 .blog h1 {
   font-weight: 900;
   color: black;
@@ -174,6 +149,12 @@
   margin: 3px;
   border-radius: 5px;
   font-family: Raleway;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  background-color: #c79a90;
+  color: white;
 }
 
 .pagination > .active > span {

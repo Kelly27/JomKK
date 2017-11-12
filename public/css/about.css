@@ -1,0 +1,27 @@
+.about h1 {
+  color: black;
+  font-weight: 900;
+}
+
+.about h3,
+.about h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.about p,
+.about li,
+.about td {
+  font-size: initial;
+  color: black;
+  line-height: 1.5;
+}
+
+.about td {
+  font-size: large;
+}
+
+.about #grey {
+  color: #798085;
+}
+
