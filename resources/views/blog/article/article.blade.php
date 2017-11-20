@@ -33,7 +33,7 @@
     <div class="row">
         @foreach($posts as $p)
         <div class="col-sm-4 blog">
-            <a href="{{URL::to($locale . '/travel/' . $p->id)}}" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/' . $p->image)}});">
+            <a href="{{URL::to($locale . $current_page_link . '/' . $p->id)}}" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/' . $p->image)}});">
                 <div id="overlay">
                     <p class="text-center title">{{$p->title}}</p>
                     <p class="text-center time"><i class="fa fa-clock-o" aria-hidden="true"></i> {{$p->created_at->toFormattedDateString()}}</p>
