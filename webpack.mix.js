@@ -24,4 +24,6 @@ mix.sass('resources/views/layout.scss', 'public/css')
     .sass('resources/views/about/about.scss', 'public/css',{
         includePaths: ['resources/views']})
     .sass('resources/views/tnc/tnc.scss', 'public/css',{
+        includePaths: ['resources/views']})
+    .sass('resources/views/directory/directory.scss', 'public/css',{
         includePaths: ['resources/views']});

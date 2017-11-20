@@ -88,5 +88,51 @@ class DatabaseSeeder extends Seeder
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]);
         }
+
+        //food directory
+        for ($i = 0; $i < 60; $i++) {
+            if($i % 2 != 0){
+                $image_food_thumb = 'food1_thumb.png';
+                $image_food = 'food1.png';
+            }
+            else{
+                $image_food_thumb = 'food2_thumb.png';
+                $image_food = 'food2.png';
+            }
+            DB::table('directories')->insert([
+                'title' => 'Caffe Star',
+                'image' => $image_food,
+                'address' => $i . ', IMAGO Shopping Mall, Coastal Highway, 88100 Kota Kinabalu, Sabah, Malaysia',
+                'related_post_url' => '',
+                'type' => 1
+            ]);
+        }
+
+        //travel directory
+        for ($i = 0; $i < 60; $i++) {
+            if($i % 2 == 0){
+                $image_travel_thumb = 'travel1_thumb.png';
+                $image_travel = 'travel1.png';
+            }
+            elseif($i % 3 == 0){
+                $image_travel_thumb = 'travel2_thumb.png';
+                $image_travel = 'travel2.png';
+            }
+            elseif($i % 5 == 0){
+                $image_travel_thumb = 'travel3_thumb.png';
+                $image_travel = 'travel3.png';
+            }
+            else{
+                $image_travel_thumb = 'travel4_thumb.png';
+                $image_travel = 'travel4.png';
+            }
+            DB::table('directories')->insert([
+                'title' => 'Desa Farm',
+                'image' => $image_travel,
+                'address' => $i . ', Kundasang, Ranau, 88100 Kota Kinabalu, Sabah, Malaysia',
+                'related_post_url' => '',
+                'type' => 2
+            ]);
+        }
     }
 }

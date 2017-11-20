@@ -24,10 +24,11 @@
             <li class="active"><a href="{{URL::to('/')}}" id="nav_css">@lang('layout.home')</a></li>
             <li><a href="{{URL::to($locale . '/food')}}" id="nav_css">FOOD</a></li>
             <li><a href="{{URL::to($locale . '/travel')}}" id="nav_css">TRAVELLING</a></li>
-            <li><a href="#" id="nav_css">DIRECTORY</a></li>
+            <li><a href="{{URL::to($locale . '/directory')}}" id="nav_css">DIRECTORY</a></li>
             <li class="dropdown" style="position: relative; float: right;">
                 @php
                 $lang = ['en', 'ch', 'my'];
+                $url = Request::segment(2);
                 @endphp
                 <a href="#" id="nav_css" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="float: right;">
                     @php
@@ -53,7 +54,7 @@
                     }
                     @endphp
                     @foreach($lang as $l)
-                       <li><a href="{{URL::to($l . '/index')}}" id="drop_css">{{strtoupper($l)}}</a></li>
+                       <li><a href="{{URL::to($l . '/' . $url)}}" id="drop_css">{{strtoupper($l)}}</a></li>
                     @endforeach
                 </ul>
             </li>

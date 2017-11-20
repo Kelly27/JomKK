@@ -29,6 +29,8 @@ Route::prefix('{locale}')->group(function(){
     Route::get('travel', 'TravelPostController@index')->name('travel');
     Route::get('travel/{id}', 'TravelPostController@article');
 
+    Route::get('directory', 'DirectoryController@index')->name('directory');
+
     Route::get('about', 'AboutController@index')->name('about');
 
     Route::get('tnc', 'TncController@index')->name('tnc');

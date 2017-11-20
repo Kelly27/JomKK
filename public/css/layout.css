@@ -155,7 +155,8 @@ body {
   font-size: 30px;
 }
 
-.footer .footer_links_container a {
+.footer .footer_links_container a,
+.footer .footer_links_container span {
   color: white;
   text-decoration: none;
   outline: none;

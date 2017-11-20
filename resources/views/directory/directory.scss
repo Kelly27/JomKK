@@ -1,0 +1,23 @@
+@import "directory_tab/directory_tab";
+
+.directory{
+    h1{
+        color: black;
+        font-weight: 900;
+    }
+
+    #map{
+        height: 800px;
+        width: 100%;
+    }
+}
+
+.pagination{
+    & > .active > span{
+        background-color: #77531e;
+        border-color: #77531e;
+    }
+    & > li > a{
+        color: #77531e;
+    }
+}

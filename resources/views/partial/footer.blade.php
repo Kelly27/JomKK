@@ -7,7 +7,7 @@
                 </td>
                 <td>
                     <a href="{{URL::to($locale . '/about')}}">ABOUT US</a><br>
-                    <a href="#">FOLLOW US</a><br>
+                    <span>FOLLOW US</span><br>
                     <div>
                         <a href="#"><img id="social_media_logo" src="{{asset('images/FB.png')}}"></a>
                         <a href="#"><img id="social_media_logo" src="{{asset('images/Insta.png')}}"></a>
