@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Caffe Star',
                 'image' => $image_food,
                 'address' => $i . ', IMAGO Shopping Mall, Coastal Highway, 88100 Kota Kinabalu, Sabah, Malaysia',
-                'related_post_url' => '',
+                'related_post_url' => 'food/' . ($i + 1),
                 'type' => 1
             ]);
         }
@@ -130,8 +130,21 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Desa Farm',
                 'image' => $image_travel,
                 'address' => $i . ', Kundasang, Ranau, 88100 Kota Kinabalu, Sabah, Malaysia',
-                'related_post_url' => '',
+                'related_post_url' => 'travel/' . ($i + 1),
                 'type' => 2
+            ]);
+        }
+
+        for ($i = 0; $i < 120; $i++) {
+            DB::table('directory_operating_hours')->insert([
+                'directory_id' => $i,
+                'day' => 'Mon - Sat',
+                'hour' => '6am - 6pm'
+            ]);
+            DB::table('directory_operating_hours')->insert([
+                'directory_id' => $i,
+                'day' => 'Sun',
+                'hour' => '1pm - 10pm'
             ]);
         }
     }

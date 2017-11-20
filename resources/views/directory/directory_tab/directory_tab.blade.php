@@ -29,21 +29,38 @@
 
                         {{-- modal --}}
                         <div id="<?php echo 'myModal' . $index;?>" class="modal">
-                          <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" id="close-button">&times;</button>
-                                <h4 class="modal-title">{{$f->title}}</h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="image-bg" style="background-image: url({{asset('images/' . $f->image)}});"></div>
-                                <p>Some text in the modal.</p>
-                              </div>
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" id="close-button">&times;</button>
+                                        <h2 class="modal-title">{{$f->title}}</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="image-bg" style="background-image: url({{asset('images/' . $f->image)}});"></div>
+                                        <div class="info-content">
+                                            <h4>Address</h4>
+                                            <p>{{$f->address}}</p>
+                                            <h4>Operating Hours</h4>
+                                            @php
+                                            $times = $f->directory_operating_hours()->get();
+                                            @endphp
+                                            <table>
+                                                @foreach($times as $time)
+                                                <tr>
+                                                    <td>{{$time->day}}</td>
+                                                    <td>{{$time->hour}}</td>
+                                                </tr>
+                                                @endforeach
+                                            </table>
+                                            <h4>Related Posts</h4>
+                                            <p>• <a href="<?php echo url($locale . '/' . $f->related_post_url);?>"><?php echo url($locale . '/' . $f->related_post_url);?></a></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
+
                         @php
                         $index++;
                         @endphp
@@ -61,19 +78,49 @@
                 </div>
                 <div class="col-xs-9">
                     <div class="row">
+                        @php
+                        $index_j = 0;
+                        @endphp
                         @foreach($travel as $t)
                         <div class="col-sm-6">
-                            <a href="#" style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/' . $t->image)}});">
+                            <a href="#" data-toggle="modal" data-target="<?php echo '#myModal_t' . $index_j;?>"style="text-decoration: none"><div class="item_card" style="background-image: url({{asset('images/' . $t->image)}});">
                                 <div id="overlay">
                                     <p class="text-center title">{{$t->title}}</p>
                                 </div>
                             </div></a>
                         </div>
+
+                        {{-- modal --}}
+                        <div id="<?php echo 'myModal_t' . $index_j;?>" class="modal">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" id="close-button">&times;</button>
+                                        <h2 class="modal-title">{{$t->title}}</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="image-bg" style="background-image: url({{asset('images/' . $t->image)}});"></div>
+                                        <div class="info-content">
+                                            <h4>Address</h4>
+                                            <p>{{$t->address}}</p>
+                                            <h4>Operating Hours</h4>
+                                            @foreach($t->directory_operating_hours() as $time)
+                                            {{$time->day}} || {{$time->hour}}
+                                            @endforeach
+                                            <h4>Related Posts</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         @php
-                        $title = $t->title;
+                        $index_j++;
                         @endphp
                         @endforeach
                     </div>
+                    <div class="text-center">{{$travel->render()}}</div>
                 </div>
             </div>
         </div>
