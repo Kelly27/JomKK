@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-2">
-                <a href="{{URL::to('/')}}"><img src="{{asset('images/logo.png')}}" class="img-responsive logo"></a>
+                <a href="{{URL::to($locale . '/index')}}"><img src="{{asset('images/logo.png')}}" class="img-responsive logo"></a>
             </div>
             <div class="col-sm-7">
                 <p class="header-title">Food and Travelling Weblog for KK</p>
@@ -21,7 +21,7 @@
 <nav class="navbar navbar-default">
     <div class="container">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="{{URL::to('/')}}" id="nav_css">@lang('layout.home')</a></li>
+            <li class="active"><a href="{{URL::to($locale . '/index')}}" id="nav_css">@lang('layout.home')</a></li>
             <li><a href="{{URL::to($locale . '/food')}}" id="nav_css">FOOD</a></li>
             <li><a href="{{URL::to($locale . '/travel')}}" id="nav_css">TRAVELLING</a></li>
             <li><a href="{{URL::to($locale . '/directory')}}" id="nav_css">DIRECTORY</a></li>
