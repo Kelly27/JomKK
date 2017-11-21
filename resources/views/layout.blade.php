@@ -12,6 +12,7 @@
     @yield('style')
     {{-- scripts --}}
     <script src="{{asset('js/app.js')}}"></script>
+    @yield('head_script')
 </head>
 <body>
     <div id='app'></div>

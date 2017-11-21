@@ -1,0 +1,43 @@
+.search{
+    color: black;
+    margin-bottom: 20px;
+    h1{
+        font-weight: 900;
+        color: black;
+        font-size: -webkit-xxx-large;
+    }
+    .query_info{
+        font-size: x-large;
+        font-style: italic;
+    }
+    .item_card{
+        width: 100%;
+        min-height: 200px;
+        background-color: #A7D2CA;
+        border-radius: 30px;
+        h3{
+            font-weight: bold;
+            font-style: italic;
+        }
+        .img-bg{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 200px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        .date{
+            color: white;
+            font-size: large;
+            font-size: large;
+        }
+        .article-content{
+            padding-left: 20px;
+        }
+    }
+}
+
+.nopadding{
+    padding: 0px;
+}

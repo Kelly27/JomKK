@@ -12,7 +12,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
-                    <a href="" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                    <a href="{{URL::to($locale . '/search')}}" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </form>
             </div>
         </div>
@@ -54,7 +54,15 @@
                     }
                     @endphp
                     @foreach($lang as $l)
-                       <li><a href="{{URL::to($l . '/' . $url)}}" id="drop_css">{{strtoupper($l)}}</a></li>
+                    @php
+                    if(Request::segment(3)){
+                        $new_url = url($l . '/' . $url . '/' . Request::segment(3) );
+                    }
+                    else{
+                        $new_url = url($l . '/' . $url);
+                    }
+                    @endphp
+                       <li><a href="{{$new_url}}" id="drop_css">{{strtoupper($l)}}</a></li>
                     @endforeach
                 </ul>
             </li>

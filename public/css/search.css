@@ -1,0 +1,51 @@
+.search {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.search h1 {
+  font-weight: 900;
+  color: black;
+  font-size: -webkit-xxx-large;
+}
+
+.search .query_info {
+  font-size: x-large;
+  font-style: italic;
+}
+
+.search .item_card {
+  width: 100%;
+  min-height: 200px;
+  background-color: #A7D2CA;
+  border-radius: 30px;
+}
+
+.search .item_card h3 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.search .item_card .img-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.search .item_card .date {
+  color: white;
+  font-size: large;
+  font-size: large;
+}
+
+.search .item_card .article-content {
+  padding-left: 20px;
+}
+
+.nopadding {
+  padding: 0px;
+}
+

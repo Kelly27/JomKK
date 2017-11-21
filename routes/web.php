@@ -31,6 +31,8 @@ Route::prefix('{locale}')->group(function(){
 
     Route::get('directory', 'DirectoryController@index')->name('directory');
 
+    Route::get('search', 'SearchController@index')->name('search');
+
     Route::get('about', 'AboutController@index')->name('about');
 
     Route::get('tnc', 'TncController@index')->name('tnc');
