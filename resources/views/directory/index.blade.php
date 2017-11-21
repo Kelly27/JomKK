@@ -7,9 +7,9 @@
 @section('content')
 <div class="directory">
     <div class="container">
-        @include('partial.breadcrumb', ['breadcrumb' => [['name' => 'Home', 'link' => '/']],
-                                                    'active_bread' => 'Directory'])
-        <h1>DIRECTORY</h1>
+        @include('partial.breadcrumb', ['breadcrumb' => [['name' => trans('breadcrumb.home'), 'link' => '/']],
+                                                    'active_bread' => trans('breadcrumb.directory')])
+        <h1>@lang('blog.directory')</h1>
     </div>
     <div class="container-fluid">
       <div class="row">

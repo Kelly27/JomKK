@@ -1,4 +1,4 @@
-<h3>by Area</h3>
+<h3>@lang('blog.by_area')</h3>
 <form class="area">
     <input type="checkbox" name="kk_city_center" id="cbox"><label for="cbox"></label> KK City Center <br>
     <input type="checkbox" name="damai" id="cbox2"><label for="cbox2"></label> Damai <br>
@@ -18,7 +18,7 @@
     <input type="checkbox" name="others" id="cbox16"><label for="cbox16"></label> Others <br>
 </form>
 
-<h3>by Cuisine</h3>
+<h3>@lang('blog.by_cuisine')</h3>
 <form>
     <input type="checkbox" name="chinese" id="cbox17"><label for="cbox17"></label> Chinese <br>
     <input type="checkbox" name="malay" id="cbox18"><label for="cbox18"></label> Malay <br>
@@ -28,7 +28,7 @@
     <input type="checkbox" name="Western" id="cbox22"><label for="cbox22"></label> Western <br>
 </form>
 
-<h3>by Meal Type</h3>
+<h3>@lang('blog.by_meal_type')</h3>
 <form>
     <input type="checkbox" name="breakfast" id="cbox23"><label for="cbox23"></label> Breakfast <br>
     <input type="checkbox" name="lunch" id="cbox24"><label for="cbox24"></label> Lunch <br>
@@ -37,7 +37,7 @@
     <input type="checkbox" name="supper" id="cbox27"><label for="cbox27"></label> Supper <br>
 </form>
 
-<h3>by Food Serve</h3>
+<h3>@lang('blog.by_food_serve')</h3>
 <form>
     <input type="checkbox" name="halal" id="cbox28"><label for="cbox28"></label> Halal <br>
     <input type="checkbox" name="non-halal" id="cbox29"><label for="cbox29"></label> Non-Halal <br>

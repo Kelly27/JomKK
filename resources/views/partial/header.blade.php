@@ -10,7 +10,7 @@
             <div class="col-sm-3">
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="@lang('layout.search')">
                     </div>
                     <a href="{{URL::to($locale . '/search')}}" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
                 </form>
@@ -22,9 +22,9 @@
     <div class="container">
         <ul class="nav navbar-nav">
             <li class="active"><a href="{{URL::to($locale . '/index')}}" id="nav_css">@lang('layout.home')</a></li>
-            <li><a href="{{URL::to($locale . '/food')}}" id="nav_css">FOOD</a></li>
-            <li><a href="{{URL::to($locale . '/travel')}}" id="nav_css">TRAVELLING</a></li>
-            <li><a href="{{URL::to($locale . '/directory')}}" id="nav_css">DIRECTORY</a></li>
+            <li><a href="{{URL::to($locale . '/food')}}" id="nav_css">@lang('layout.food')</a></li>
+            <li><a href="{{URL::to($locale . '/travel')}}" id="nav_css">@lang('layout.travelling')</a></li>
+            <li><a href="{{URL::to($locale . '/directory')}}" id="nav_css">@lang('layout.directory')</a></li>
             <li class="dropdown" style="position: relative; float: right;">
                 @php
                 $lang = ['en', 'ch', 'my'];

@@ -1,16 +1,16 @@
 <div class="directory_tab" style="margin-top: -80px">
     <ul class="nav nav-pills" style="padding-left: 0;">
         <li class="active">
-            <a href="#1t" data-toggle="tab"><h4>FOOD</h4></a>
+            <a href="#1t" data-toggle="tab"><h4>@lang('blog.food')</h4></a>
         </li>
-        <li><a href="#2t" data-toggle="tab"><h4>TRAVELLING</h4></a></li>
+        <li><a href="#2t" data-toggle="tab"><h4>@lang('blog.travelling')</h4></a></li>
     </ul>
 
     <div class="tab-content">
         <div class="tab-pane active directory_content" id="1t">
             <div class="row">
                 <div class="col-xs-3">
-                    <h2>Filter</h2>
+                    <h2>@lang('blog.filter')</h2>
                     @include('directory.directory_tab.food_filter')
                 </div>
                 <div class="col-xs-9">
@@ -39,9 +39,9 @@
                                     <div class="modal-body">
                                         <div class="image-bg" style="background-image: url({{asset('images/' . $f->image)}});"></div>
                                         <div class="info-content">
-                                            <h4>Address</h4>
+                                            <h4>@lang('blog.address')</h4>
                                             <p>{{$f->address}}</p>
-                                            <h4>Operating Hours</h4>
+                                            <h4>@lang('blog.operating_hour')</h4>
                                             @php
                                             $times = $f->directory_operating_hours()->get();
                                             @endphp
@@ -53,7 +53,7 @@
                                                 </tr>
                                                 @endforeach
                                             </table>
-                                            <h4>Related Posts</h4>
+                                            <h4>@lang('blog.related_post') </h4>
                                             <p>• <a href="<?php echo url($locale . '/' . $f->related_post_url);?>"><?php echo url($locale . '/' . $f->related_post_url);?></a></p>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
         <div class="tab-pane directory_content" id="2t">
             <div class="row">
                 <div class="col-xs-3">
-                    <h2>Filter</h2>
+                    <h2>@lang('blog.filter')</h2>
                     @include('directory.directory_tab.travel_filter')
                 </div>
                 <div class="col-xs-9">
@@ -102,13 +102,13 @@
                                     <div class="modal-body">
                                         <div class="image-bg" style="background-image: url({{asset('images/' . $t->image)}});"></div>
                                         <div class="info-content">
-                                            <h4>Address</h4>
+                                            <h4>@lang('blog.address')</h4>
                                             <p>{{$t->address}}</p>
-                                            <h4>Operating Hours</h4>
+                                            <h4>@lang('blog.operating_hour')</h4>
                                             @foreach($t->directory_operating_hours() as $time)
                                             {{$time->day}} || {{$time->hour}}
                                             @endforeach
-                                            <h4>Related Posts</h4>
+                                            <h4>@lang('blog.related_post') </h4>
                                         </div>
                                     </div>
                                 </div>

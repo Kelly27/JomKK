@@ -1,5 +1,5 @@
 <div class="filter">
-    <h3>by Cuisine</h3>
+    <h3>@lang('blog.by_cuisine')</h3>
     <form>
         <input type="checkbox" name="chinese" id="cbox1"><label for="cbox1"></label> Chinese <br>
         <input type="checkbox" name="malay" id="cbox2"><label for="cbox2"></label> Malay <br>
@@ -9,7 +9,7 @@
         <input type="checkbox" name="Western" id="cbox6"><label for="cbox6"></label> Western <br>
     </form>
 
-    <h3>by Meal Type</h3>
+    <h3>@lang('blog.by_meal_type')</h3>
     <form>
         <input type="checkbox" name="breakfast" id="cbox7"><label for="cbox7"></label> Breakfast <br>
         <input type="checkbox" name="lunch" id="cbox8"><label for="cbox8"></label> Lunch <br>
@@ -18,7 +18,7 @@
         <input type="checkbox" name="supper" id="cbox11"><label for="cbox11"></label> Supper <br>
     </form>
 
-    <h3>by Food Serve</h3>
+    <h3>@lang('blog.by_food_serve')</h3>
     <form>
         <input type="checkbox" name="halal" id="cbox12"><label for="cbox12"></label> Halal <br>
         <input type="checkbox" name="non-halal" id="cbox13"><label for="cbox13"></label> Non-Halal <br>

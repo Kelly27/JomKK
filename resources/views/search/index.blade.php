@@ -25,13 +25,13 @@
 
 @section('content')
 <div class="container search">
-    @include('partial.breadcrumb', ['breadcrumb' => [['name' => 'Home', 'link' => '/']],
-                                                    'active_bread' => 'Search Result'])
-    <h1>SEARCH RESULT</h1>
-    <p class="query_info">Query: </p>
+    @include('partial.breadcrumb', ['breadcrumb' => [['name' => trans('breadcrumb.home') , 'link' => '/']],
+                                                    'active_bread' => trans('breadcrumb.search') ])
+    <h1>@lang('blog.search')</h1>
+    {{-- <p class="query_info">Query: </p> --}}
     <div class="row">
         <div class="col-md-6">
-            <div class="container-fluid item_card">
+            <a href="{{URL::to($locale . '/food/' . $food->id )}}" style="text-decoration: none"><div class="container-fluid item_card">
                 <div class="row">
                     <div class="col-xs-4 nopadding">
                         <div class="img-bg" style="background-image: url({{asset('images/' . $food->image)}});"></div>
@@ -47,7 +47,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div></a>
         </div>
     </div>
 </div>

@@ -4,13 +4,13 @@
 <div class="container blog">
     <div class="row">
         <div class="col-xs-2 filter" >
-            <h2>Filter</h2>
+            <h2>@lang('blog.filter')</h2>
             @include('blog/partial/food_filter')
         </div>
         <div class="col-xs-10">
-            @include('partial.breadcrumb', ['breadcrumb' => [['name' => 'Home', 'link' => '/']],
-                                                'active_bread' => 'Food'])
-            <h1>FOOD</h1>
+            @include('partial.breadcrumb', ['breadcrumb' => [['name' => trans('breadcrumb.home'), 'link' => '/']],
+                                                'active_bread' => trans('breadcrumb.food')])
+            <h1>@lang('blog.food')</h1>
             <div class="row">
                 @foreach($posts as $p)
                     <div class="col-sm-4">

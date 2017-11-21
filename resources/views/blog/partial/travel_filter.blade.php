@@ -1,4 +1,4 @@
-<h3>by Area</h3>
+<h3>@lang('blog.by_area')</h3>
 <form class="area">
     <input type="checkbox" name="kk_city_center" id="cbox"><label for="cbox"></label> KK City Center <br>
     <input type="checkbox" name="damai" id="cbox2"><label for="cbox2"></label> Damai <br>
@@ -18,7 +18,7 @@
     <input type="checkbox" name="others" id="cbox16"><label for="cbox16"></label> Others <br>
 </form>
 
-<h3>by Travelling Activity</h3>
+<h3>@lang('blog.by_travel_act')</h3>
 <form>
     <input type="checkbox" name="accomodation" id="cbox17"><label for="cbox17"></label> Accomodation <br>
     <input type="checkbox" name="shopping" id="cbox18"><label for="cbox18"></label> Shopping <br>
@@ -28,7 +28,7 @@
     {{-- <input type="checkbox" name="Western" id="cbox22"><label for="cbox22"></label> Western <br> --}}
 </form>
 
-<h3>by Traveller Type</h3>
+<h3>@lang('blog.by_travel_type')</h3>
 <form>
     <input type="checkbox" name="solo" id="cbox23"><label for="cbox23"></label> Solo <br>
     <input type="checkbox" name="family" id="cbox24"><label for="cbox24"></label> Family <br>

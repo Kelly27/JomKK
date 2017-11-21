@@ -1,5 +1,5 @@
 <div class="filter">
-    <h3>by Travelling Activity</h3>
+    <h3>@lang('blog.by_travel_act')</h3>
     <form>
         <input type="checkbox" name="accomodation" id="cbox17"><label for="cbox17"></label> Accomodation <br>
         <input type="checkbox" name="shopping" id="cbox18"><label for="cbox18"></label> Shopping <br>
@@ -8,7 +8,7 @@
         <input type="checkbox" name="theme-park" id="cbox21"><label for="cbox21"></label> Theme Park <br>
     </form>
 
-    <h3>by Traveller Type</h3>
+    <h3>@lang('blog.by_travel_type')</h3>
     <form>
         <input type="checkbox" name="solo" id="cbox22"><label for="cbox22"></label> Solo <br>
         <input type="checkbox" name="family" id="cbox23"><label for="cbox23"></label> Family <br>

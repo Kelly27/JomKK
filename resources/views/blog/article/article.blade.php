@@ -6,16 +6,16 @@
 
         @php
         if(Request::segment(2) == 'food'){
-            $current_page_name = "Food";
+            $current_page_name = trans('breadcrumb.food');
             $current_page_link = "/food";
         }
         else{
-            $current_page_name = "Travel";
+            $current_page_name = trans('breadcrumb.travelling');
             $current_page_link = "/travel";
         }
         @endphp
 
-        @include('partial.breadcrumb', ['breadcrumb' => [['name' => 'Home', 'link' => '/'],
+        @include('partial.breadcrumb', ['breadcrumb' => [['name' => trans('breadcrumb.home'), 'link' => '/'],
                                                          ['name' => $current_page_name, 'link' => URL::to($locale . $current_page_link)]],
                                                           'active_bread' => $article->title])
         <h1>{{$article->title}}</h1>
@@ -29,7 +29,7 @@
         </p>
     </div>
     <hr style="border-color: #C98474; border-width: 2px;">
-    <h2 class="text-left">You May Also Like...</h2>
+    <h2 class="text-left">@lang('blog.also_like')</h2>
     <div class="row">
         @foreach($posts as $p)
         <div class="col-sm-4 blog">
@@ -43,7 +43,7 @@
         @endforeach
     </div>
     <div class="text-right" style="margin-bottom: 15px;">
-        <a id="more_link" href="{{URL::to($locale . $current_page_link)}}">MORE >></a>
+        <a id="more_link" href="{{URL::to($locale . $current_page_link)}}">@lang('blog.more') >></a>
     </div>
 </div>
 @endsection

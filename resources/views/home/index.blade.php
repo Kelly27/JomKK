@@ -3,9 +3,9 @@
 @section('content')
 <div class="container home">
     @include('partial.carousel')
-    @include('home.partial.h_menu', ['title' => 'TRENDING', 'class_title' => 'trending', 'number' => '1'])
-    @include('home.partial.h_menu', ['title' => 'RECOMENDED', 'class_title' => 'recommended', 'number' => '2'])
-    @include('home.partial.h_menu', ['title' => 'PROMOTION', 'class_title' => 'promotion', 'number' => '3'])
+    @include('home.partial.h_menu', ['title' => trans('home.trending'), 'class_title' => 'trending', 'number' => '1'])
+    @include('home.partial.h_menu', ['title' => trans('home.recommended'), 'class_title' => 'recommended', 'number' => '2'])
+    @include('home.partial.h_menu', ['title' => trans('home.promotion'), 'class_title' => 'promotion', 'number' => '3'])
 </div>
 @endsection
 
