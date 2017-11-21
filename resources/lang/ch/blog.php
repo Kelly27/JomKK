@@ -17,5 +17,13 @@ return [
     'address' => '地址',
     'operating_hour' => '营业时间',
     'related_post' => '相关文章',
+
+    'about' => '关于我们',
+    'tnc' => '条件与条款',
+    'contact' => '联络我们',
+    'phone' => '电话号码',
+    'vision' => '我们的宏愿',
+    'mission' => '我们的任务',
+
 ];
     // '' => '',

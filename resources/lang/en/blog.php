@@ -17,5 +17,12 @@ return [
     'address' => 'Address',
     'operating_hour' => 'Operating Hours',
     'related_post' => 'Related Posts',
+
+    'about' => 'ABOUT US',
+    'tnc' => 'TERMS & CONDITIONS',
+    'contact' => 'Contact Us',
+    'phone' => 'Phone',
+    'vision' => 'Our Vision',
+    'mission' => 'Our Mission',
 ];
     // '' => '',

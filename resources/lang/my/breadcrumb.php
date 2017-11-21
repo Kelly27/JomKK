@@ -6,5 +6,7 @@ return [
     'travelling' => 'Pelancongan',
     'directory' => 'Direktori',
     'search' => 'Keputusan Carian',
+    'about' => 'Tentang Kami',
+    'tnc' => 'Terma & Syarat'
 ];
     // '' => '',

@@ -6,5 +6,7 @@ return [
     'travelling' => '旅游',
     'directory' => '目录',
     'search' => '搜索结果',
+    'about' => '关于我们',
+    'tnc' => '条件与条款'
 ];
     // '' => '',

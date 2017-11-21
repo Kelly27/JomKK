@@ -17,5 +17,12 @@ return [
     'address' => 'Alamat',
     'operating_hour' => 'Waktu Operasi',
     'related_post' => 'Article Berkaitan',
+
+    'about' => 'TENTANG KAMI',
+    'tnc' => 'TERMA & SYARAT',
+    'contact' => 'Hubungi Kami',
+    'phone' => 'Nombor Telefon',
+    'vision' => 'Visi Kami',
+    'mission' => 'Misi Kami',
 ];
     // '' => '',

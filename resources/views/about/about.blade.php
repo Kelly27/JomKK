@@ -6,36 +6,36 @@
 
 @section('content')
 <div class="about container">
-@include('partial.breadcrumb', ['breadcrumb' => [['name' => 'Home', 'link' => '/']],
-                                                'active_bread' => 'About Us'])
-<h1>ABOUT US</h1>
+@include('partial.breadcrumb', ['breadcrumb' => [['name' => trans('breadcrumb.home') , 'link' => '/']],
+                                                'active_bread' => trans('breadcrumb.about') ])
+<h1>@lang('blog.about')</h1>
 <div class="row">
     <div class="col-sm-8">
         <p class="text-justify">{{$intro}}</p>
     </div>
     <div class="col-sm-4">
-        <h2>Contact Us</h2>
+        <h2>@lang('blog.contact')</h2>
         <table>
             <tr>
-                <td>Phone</td>
+                <td>@lang('blog.phone')</td>
                 <td>:</td>
                 <td id="grey"> &nbsp 088-123456</td>
             </tr>
             <tr>
-                <td>Address</td>
+                <td>@lang('blog.address')</td>
                 <td>:</td>
                 <td id="grey"> &nbsp 5037 Diam Rd. Daly City Ohio 90255</td>
             </tr>
         </table>
     </div>
 </div>
-    <h3>Our Vision</h3>
+    <h3>@lang('blog.vision')</h3>
     <ul>
         <li>{{$vision[0]}}</li>
         <li>{{$vision[0]}}</li>
         <li>{{$vision[1]}}</li>
     </ul>
-    <h3>Our Mission</h3>
+    <h3>@lang('blog.mission')</h3>
     <ul>
         <li>{{$vision[0]}}</li>
         <li>{{$vision[0]}}</li>
