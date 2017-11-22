@@ -4,7 +4,7 @@ return [
     'home' => 'LAMAN UTAMA',
     'food' => 'MAKANAN',
     'travelling' => 'PELANCONGAN',
-    'directory' => 'DIREKTORY',
+    'directory' => 'DIREKTORI',
     'search' => 'CARI',
     'about_us' => 'TENTANG KAMI',
     'follow' => 'IKUT KAMI',

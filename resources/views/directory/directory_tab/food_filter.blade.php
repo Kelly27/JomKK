@@ -4,7 +4,7 @@
         <input type="checkbox" name="chinese" id="cbox1"><label for="cbox1"></label> Chinese <br>
         <input type="checkbox" name="malay" id="cbox2"><label for="cbox2"></label> Malay <br>
         <input type="checkbox" name="japanese" id="cbox3"><label for="cbox3"></label> Japanese <br>
-        <input type="checkbox" name="koeran" id="cbox4"><label for="cbox4"></label> Koeran <br>
+        <input type="checkbox" name="koeran" id="cbox4"><label for="cbox4"></label> Korean <br>
         <input type="checkbox" name="indian" id="cbox5"><label for="cbox5"></label> Indian <br>
         <input type="checkbox" name="Western" id="cbox6"><label for="cbox6"></label> Western <br>
     </form>
