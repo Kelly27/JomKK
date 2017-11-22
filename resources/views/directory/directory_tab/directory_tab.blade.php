@@ -105,10 +105,19 @@
                                             <h4>@lang('blog.address')</h4>
                                             <p>{{$t->address}}</p>
                                             <h4>@lang('blog.operating_hour')</h4>
-                                            @foreach($t->directory_operating_hours() as $time)
-                                            {{$time->day}} || {{$time->hour}}
-                                            @endforeach
+                                            @php
+                                            $times_t = $t->directory_operating_hours()->get();
+                                            @endphp
+                                            <table>
+                                                @foreach($times_t as $time)
+                                                <tr>
+                                                    <td>{{$time->day}}</td>
+                                                    <td>{{$time->hour}}</td>
+                                                </tr>
+                                                @endforeach
+                                            </table>
                                             <h4>@lang('blog.related_post') </h4>
+                                            <p>• <a href="<?php echo url($locale . '/' . $t->related_post_url);?>"><?php echo url($locale . '/' . $t->related_post_url);?></a></p>
                                         </div>
                                     </div>
                                 </div>
