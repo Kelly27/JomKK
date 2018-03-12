@@ -1,1 +1,4 @@
-#Hello, this is JomKK
+# Hello, this is JomKK
+* one
+* two 
+* three
